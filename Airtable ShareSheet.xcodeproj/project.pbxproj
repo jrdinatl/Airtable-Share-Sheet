@@ -48,26 +48,29 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7D7622A72CCD7A6800D28719 /* Exceptions for "Airtable ShareSheet" folder in "ShareExtension" target */ = {
+		7D76B1D22CD853C60049A951 /* Exceptions for "Airtable ShareSheet" folder in "ShareExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"/Localized: Main.storyboard",
+				AppDelegate.swift,
+				Assets.xcassets,
 				Info.plist,
+				SceneDelegate.swift,
+				ViewController.swift,
 			);
 			target = 7DE5D0412CC7586300E71E2C /* ShareExtension */;
 		};
 		7D840EAE2CCF123D00A5341B /* Exceptions for "Airtable ShareSheet" folder in "Airtable ShareSheet" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"/Localized: Main.storyboard",
 				AppDelegate.swift,
+				Assets.xcassets,
+				Info.plist,
+				SceneDelegate.swift,
+				ViewController.swift,
 			);
 			target = 7DE5CFFB2CC7579400E71E2C /* Airtable ShareSheet */;
-		};
-		7DE5D0502CC7586300E71E2C /* Exceptions for "ShareExtension" folder in "ShareExtension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 7DE5D0412CC7586300E71E2C /* ShareExtension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -76,7 +79,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				7D840EAE2CCF123D00A5341B /* Exceptions for "Airtable ShareSheet" folder in "Airtable ShareSheet" target */,
-				7D7622A72CCD7A6800D28719 /* Exceptions for "Airtable ShareSheet" folder in "ShareExtension" target */,
+				7D76B1D22CD853C60049A951 /* Exceptions for "Airtable ShareSheet" folder in "ShareExtension" target */,
 			);
 			path = "Airtable ShareSheet";
 			sourceTree = "<group>";
@@ -92,9 +95,6 @@
 		};
 		7DE5D0432CC7586300E71E2C /* ShareExtension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7DE5D0502CC7586300E71E2C /* Exceptions for "ShareExtension" folder in "ShareExtension" target */,
-			);
 			path = ShareExtension;
 			sourceTree = "<group>";
 		};
@@ -170,6 +170,9 @@
 			dependencies = (
 				7DE5D04B2CC7586300E71E2C /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				7DE5D01D2CC7579500E71E2C /* Airtable ShareSheet Extension */,
+			);
 			name = "Airtable ShareSheet";
 			packageProductDependencies = (
 			);
@@ -191,6 +194,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				7DE5CFFE2CC7579400E71E2C /* Airtable ShareSheet */,
+				7DE5D01D2CC7579500E71E2C /* Airtable ShareSheet Extension */,
 				7DE5D0432CC7586300E71E2C /* ShareExtension */,
 			);
 			name = ShareExtension;
@@ -208,7 +212,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					7DE5CFFB2CC7579400E71E2C = {
 						CreatedOnToolsVersion = 16.0;
@@ -288,7 +292,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 43RX7NUVQF;
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Airtable ShareSheet/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Airtable ShareSheet";
@@ -303,6 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -324,7 +331,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 43RX7NUVQF;
+				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Airtable ShareSheet/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Airtable ShareSheet";
@@ -339,6 +348,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -388,6 +398,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -451,6 +462,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;

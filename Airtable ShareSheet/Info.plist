@@ -6,6 +6,10 @@
 	<string>com.curiousanalytics.AirtableShareSheet</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
 	<key>NSPrincipalClass</key>
 	<string>$(PRODUCT_MODULE_NAME).AppDelegate</string>
 	<key>UIApplicationSceneManifest</key>
@@ -26,6 +30,11 @@
 				</dict>
 			</array>
 		</dict>
+	</dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
