@@ -10,40 +10,13 @@
 		7D62897D2CC9FAE3001003BE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D62897C2CC9FAE3001003BE /* Social.framework */; };
 		7D62897F2CC9FAF1001003BE /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D62897E2CC9FAF1001003BE /* UniformTypeIdentifiers.framework */; };
 		7D786B2A2CCAF3CE001826A5 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D786B292CCAF3CE001826A5 /* AppKit.framework */; platformFilters = (macos, ); };
-		7D840EAC2CCF123400A5341B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D840EAB2CCF123400A5341B /* UIKit.framework */; };
-		7DE5D04C2CC7586300E71E2C /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7DE5D0422CC7586300E71E2C /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7DE5D04A2CC7586300E71E2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7DE5CFF42CC7579400E71E2C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7DE5D0412CC7586300E71E2C;
-			remoteInfo = ShareExtension;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7DE5D0382CC7579500E71E2C /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				7DE5D04C2CC7586300E71E2C /* ShareExtension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7D62897C2CC9FAE3001003BE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		7D62897E2CC9FAF1001003BE /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		7D786B292CCAF3CE001826A5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
 		7D840EAB2CCF123400A5341B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7DE5CFFC2CC7579400E71E2C /* Airtable ShareSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airtable ShareSheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE5D0422CC7586300E71E2C /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -60,25 +33,17 @@
 			);
 			target = 7DE5D0412CC7586300E71E2C /* ShareExtension */;
 		};
-		7D840EAE2CCF123D00A5341B /* Exceptions for "Airtable ShareSheet" folder in "Airtable ShareSheet" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"/Localized: Main.storyboard",
-				AppDelegate.swift,
-				Assets.xcassets,
-				Info.plist,
-				SceneDelegate.swift,
-				ViewController.swift,
-			);
-			target = 7DE5CFFB2CC7579400E71E2C /* Airtable ShareSheet */;
-		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7D16A8BD2CD9CCA500A12618 /* Airtable ShareSheet */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Airtable ShareSheet";
+			sourceTree = "<group>";
+		};
 		7DE5CFFE2CC7579400E71E2C /* Airtable ShareSheet */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				7D840EAE2CCF123D00A5341B /* Exceptions for "Airtable ShareSheet" folder in "Airtable ShareSheet" target */,
 				7D76B1D22CD853C60049A951 /* Exceptions for "Airtable ShareSheet" folder in "ShareExtension" target */,
 			);
 			path = "Airtable ShareSheet";
@@ -101,14 +66,6 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7DE5CFF92CC7579400E71E2C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D840EAC2CCF123400A5341B /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7DE5D03F2CC7586300E71E2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +96,7 @@
 				7DE5CFFE2CC7579400E71E2C /* Airtable ShareSheet */,
 				7DE5D01D2CC7579500E71E2C /* Airtable ShareSheet Extension */,
 				7DE5D0432CC7586300E71E2C /* ShareExtension */,
+				7D16A8BD2CD9CCA500A12618 /* Airtable ShareSheet */,
 				7D62897B2CC9FAE3001003BE /* Frameworks */,
 				7DE5CFFD2CC7579400E71E2C /* Products */,
 			);
@@ -147,7 +105,6 @@
 		7DE5CFFD2CC7579400E71E2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7DE5CFFC2CC7579400E71E2C /* Airtable ShareSheet.app */,
 				7DE5D0422CC7586300E71E2C /* ShareExtension.appex */,
 			);
 			name = Products;
@@ -156,30 +113,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7DE5CFFB2CC7579400E71E2C /* Airtable ShareSheet */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7DE5D0392CC7579500E71E2C /* Build configuration list for PBXNativeTarget "Airtable ShareSheet" */;
-			buildPhases = (
-				7DE5CFF82CC7579400E71E2C /* Sources */,
-				7DE5CFF92CC7579400E71E2C /* Frameworks */,
-				7DE5CFFA2CC7579400E71E2C /* Resources */,
-				7DE5D0382CC7579500E71E2C /* Embed Foundation Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DE5D04B2CC7586300E71E2C /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				7DE5D01D2CC7579500E71E2C /* Airtable ShareSheet Extension */,
-			);
-			name = "Airtable ShareSheet";
-			packageProductDependencies = (
-			);
-			productName = "Airtable ShareSheet";
-			productReference = 7DE5CFFC2CC7579400E71E2C /* Airtable ShareSheet.app */;
-			productType = "com.apple.product-type.application";
-		};
 		7DE5D0412CC7586300E71E2C /* ShareExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DE5D04D2CC7586300E71E2C /* Build configuration list for PBXNativeTarget "ShareExtension" */;
@@ -211,12 +144,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					7DE5CFFB2CC7579400E71E2C = {
-						CreatedOnToolsVersion = 16.0;
-					};
 					7DE5D0412CC7586300E71E2C = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -236,20 +166,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7DE5CFFB2CC7579400E71E2C /* Airtable ShareSheet */,
 				7DE5D0412CC7586300E71E2C /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7DE5CFFA2CC7579400E71E2C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7DE5D0402CC7586300E71E2C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,13 +182,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7DE5CFF82CC7579400E71E2C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7DE5D03E2CC7586300E71E2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,93 +191,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		7DE5D04B2CC7586300E71E2C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7DE5D0412CC7586300E71E2C /* ShareExtension */;
-			targetProxy = 7DE5D04A2CC7586300E71E2C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		7DE5D03A2CC7579500E71E2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 43RX7NUVQF;
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Airtable ShareSheet/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Airtable ShareSheet";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-					"-framework",
-					WebKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CuriousAnalytics.Airtable-ShareSheet";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7DE5D03B2CC7579500E71E2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 43RX7NUVQF;
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Airtable ShareSheet/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Airtable ShareSheet";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-					"-framework",
-					WebKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CuriousAnalytics.Airtable-ShareSheet";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		7DE5D03C2CC7579500E71E2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -490,7 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 43RX7NUVQF;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -520,7 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 43RX7NUVQF;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -552,15 +381,6 @@
 			buildConfigurations = (
 				7DE5D03C2CC7579500E71E2C /* Debug */,
 				7DE5D03D2CC7579500E71E2C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7DE5D0392CC7579500E71E2C /* Build configuration list for PBXNativeTarget "Airtable ShareSheet" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DE5D03A2CC7579500E71E2C /* Debug */,
-				7DE5D03B2CC7579500E71E2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
